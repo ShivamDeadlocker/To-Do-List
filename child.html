@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List for Youngs</title>
+        <link rel="stylesheet" href="child.css">
+    </head>
+    <body>
+    <img id = "bg" src="CHILD_PAGE.jpg" alt="bg_image">
+        <div id="app">
+            <div class="header">
+                <h2 style="color: brown;">To-Do List for childeren's (Age 10-15) </h2>
+                <!-- <span id="currentDate"></span> -->
+                <button onclick="toggleTheme()">Toggle Theme</button> <!--Added this line-->
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button onclick="addTask()">Add</button>
+                <br><br>
+                <label for="routineSelect" style="color: brown; font-weight: 200;"><b>Select Routine:</b></label>
+                <select id="routineSelect">
+                    <option value="homework">Homework</option>
+                    <option value="chores">Chores</option>
+                    <option value="playtime">Playtime</option>
+                    <option value="reading">Reading Time</option>
+                    <option value="exercise">Exercise</option>
+                </select>
+            </div>
+    
+            <ul id="taskList">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+            <button onclick="clearAllTasks()" class="clearBtn">Clear All Tasks</button>
+        </div>
+    
+        <script src="child.js"></script>
+</html>
